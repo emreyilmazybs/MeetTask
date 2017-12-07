@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MeetingOrganizerDbModelStoreContainer" CdmEntityContainer="MeetingOrganizerDbEntities1">
+    <EntitySetMapping Name="Toplanti">
+      <EntityTypeMapping TypeName="MeetingOrganizerDbModel.Toplanti">
+        <MappingFragment StoreEntitySet="Toplanti">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ToplantiKonusu" ColumnName="ToplantiKonusu" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="BaslangicSaati" ColumnName="BaslangicSaati" />
+          <ScalarProperty Name="Katilimcilar" ColumnName="Katilimcilar" />
+          <ScalarProperty Name="BitisSaati" ColumnName="BitisSaati" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

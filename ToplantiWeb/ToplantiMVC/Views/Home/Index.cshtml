@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container">
+    <div class="col-xs-12 col-md-8">
+        <div class="panel panel-default">
+            <div class="panel-heading">Toplantı Listesi</div>
+
+            <table id="meetList" class="table table-striped">
+
+                <thead>
+                <th>Konu</th>
+                <th>Tarihi</th>
+                <th>Başlangıç Saati</th>
+                <th>Bitiş Saati</th>
+                <th>Katılımcılar</th>
+                <th>İşlemler</th>
+                </thead>
+                <tbody>
+                    @*Liste Buraya Basılakaca*@
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-4" id="formContainer">
+        <div class="createForm">
+            <h3>Yeni Toplantı Ekle</h3>
+            <div class="form-group">
+                <label for="email">Konu:</label>
+                <input type="text" class="form-control" id="txtKonu" placeholder="Konu Gir" name="konu">
+            </div>
+            <div class="form-group">
+                <label for="email">Katılımcılar:</label>
+                <input type="text" class="form-control" id="txtKat" placeholder="Katılımcı Gir" name="katilimci">
+            </div>
+            <input type="datetime-local" class="form-control" id="datetime"><br>
+            <input type="time" class="form-control" id="timestart"><br>
+            <input type="time" class="form-control" id="timeend"><br>
+            <button id="btnEkle" class="btn btn-default">Kaydet</button>
+        </div>
+        <div class="updateForm">
+            <h3>Toplantı Düzenle</h3>
+            <div class="form-group">
+                <label for="email">Konu:</label>
+                <input type="text" class="form-control" id="txtKonuG" placeholder="Konu Gir" name="konu">
+            </div>
+            <div class="form-group">
+                <label for="email">Katılımcılar:</label>
+                <input type="text" class="form-control" id="txtKatG" placeholder="Katılımcı Gir" name="katilimci">
+            </div>
+            <input type="datetime-local" class="form-control" id="datetimeG"><br>
+            <input type="time" class="form-control" id="timestartG"><br>
+            <input type="time" class="form-control" id="timeendG"><br>
+            <input type="hidden" id="idG">
+            <button id="btnGuncelle" class="btn btn-default">Güncelle</button>
+        </div>
+    </div>
+</div>
